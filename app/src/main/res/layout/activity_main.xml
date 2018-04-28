@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lnik3.pwtest.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"/>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:textSize="25dp"
+                android:layout_height="wrap_content"
+                android:text="QEQWE:123123"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transfer:"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/go"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Go"/>
+            <AutoCompleteTextView
+                android:id="@+id/count"
+                android:layout_width="80dp"
+                android:inputType="number"
+                android:layout_height="50dp" />
+            <Spinner
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"></Spinner>
+        </LinearLayout>
+        <ExpandableListView
+            android:id="@+id/expListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ExpandableListView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
